@@ -8,6 +8,7 @@ This project is a frontend challenge of the "Frontend Mentor" site, it consist o
 -  CSS3
 
 ## Deploy
+https://clipboard-landing-page-master-fm.vercel.app/
 
 ## Link Challenge
 
