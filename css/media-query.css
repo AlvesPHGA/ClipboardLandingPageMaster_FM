@@ -201,18 +201,11 @@
 
     
 /* Box two */
-    .format-boxTwo{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 50px;
-    }
-
-    .format-img img{
+    .format-boxTwo, .format-img img{
         width: 100%;
     }
 
-    .boxText{
+    .format-boxTwo, .boxText{
         display: flex;
         flex-direction: column;
         row-gap: 50px;
@@ -222,13 +215,6 @@
     #boxFour{
         row-gap: 80px;
     }
-    .boxFour-img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 50px;
-    }
 
     .boxFour-img .format-img img{
         margin: 0 auto;
@@ -236,7 +222,7 @@
     }
 
 /* Box five */
-    #boxFive{
+    .boxFour-img, #boxFive{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -296,8 +282,207 @@
     
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 900px){
+    #header-site{
+        background: rgba(158, 171, 177, .12) url('../images/bg-header-desktop.png') top no-repeat;
+        background-size: 100%;
+    }
+
+    .header-img img{
+        width: 100px;
+        height: 100px;
+        margin: 90px auto 0;
+    }
+
+    #main-site{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boxOne, #boxSix{
+        width: 650px;
+    }
+
+    #boxOne .format-button, #boxSix .format-button{
+        width: 500px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .format-button button{
+        width: 200px;
+        height: 60px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+    }
+
+    #boxTwo{
+        padding: 0;
+        width: 850px;
+    }
+
+    #boxTwo .first-text{
+        width: 660px;
+    }
+
+    .format-boxTwo{
+        flex-direction: row;
+        width: 850px;
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .boxText{
+        row-gap: 10px;
+    }
+
+    .boxText .format-text{
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    #boxFour{
+        width: 850px;
+    }
+
+    .boxFour-img{
+        width: 850px ;
+        flex-direction: initial;
+        align-items: initial;
+        justify-content: center;
+        column-gap: 5px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .boxFour-img .format-img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .boxFour-img .format-img img{
+        width: 50px;
+    }
+
+    #boxFive {
+        flex-direction: initial;
+        justify-content: space-between;
+        align-items: center;
+        width: 850px;
+    }
+
+    #boxFive img{
+        width: 100px;
+    }
+
+    #boxFooter{
+        display: flex;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .boxFooter-img-link {
+        display: flex;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+        width: 600px;
+        height: 100px;
+        padding: 20px 0;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: flex-start;
+        column-gap: 10px;
+
+        font-size: 1rem;
+        width: 400px;
+        height: 70px;
+    }
+
+    .boxFooter-img-link .format-img img{
+        width: 70px;
+    }
 }
 
 @media only screen and (min-width: 1200px){
+
+    .format-text{
+        width: 900px;
+        padding: 0 20px;
+    }
+
+
+    #boxOne, #boxSix{
+        width: 900px;
+    }
+
+    #boxTwo, #boxThree, #boxFour, #boxFive{
+        width: 1100px;
+    }
+
+    #boxOne .format-button, #boxSix .format-button{
+        width: 500px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .format-button button{
+        width: 220px;
+        height: 60px;
+        font-size: 1.1rem;
+        border-radius: 25px;
+    }
+
+    #boxTwo{
+        padding: 0;;
+    }
+
+    .format-boxTwo {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .format-boxTwo .format-img img {
+        width: 550px;
+    }
+
+    #boxTwo .first-text {
+        width: 900px;
+    }    
+
+    #boxThree .format-img img {
+        width: 600px;
+    }
+
+    .boxFour-img {
+        width: 1000px;
+    }
+
+    #boxFive img {
+        width: 150px;
+    }
+
+    .boxFooter-img-link {
+        width: 700px;
+    }
+
+    .footer-link {
+        width: 500px;
+    }
+
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+    }
+
+    .social-media a img{
+        width: 40px;
+    }
 }
